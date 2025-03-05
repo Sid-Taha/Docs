@@ -62,3 +62,9 @@ Copy
 Edit
 sanity projects list
 You should now see the correct project. Double-check that the project ID matches what you have in your app's config.
+
+
+
+
+
+
