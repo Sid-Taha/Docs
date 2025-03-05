@@ -30,3 +30,8 @@ sanity dataset import myData.gz production
 
 Would you like me to add steps for automating backups or handling schema conflicts? Let me know! 🚀
 
+
+**Verify Your Project ID**
+```bash
+sanity projects list
+```
