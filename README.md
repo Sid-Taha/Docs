@@ -1,6 +1,4 @@
-# Doc-sanity-backup
-
-## Sanity Backup and Restore Guide
+# Sanity Backup and Restore Guide
 
 ### 🟢 Step 1: Install Sanity CLI
 Open your terminal and run the following command to install the Sanity CLI globally:
