@@ -32,6 +32,9 @@
 8. To view data in a readable table format, run these commands inside the SQLite shell:
    ```sh
    .headers on
+   ```
+
+    ```sh
    .mode box
    ```
 
