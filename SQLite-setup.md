@@ -53,6 +53,18 @@
     .exit
     ```
 
+### **Step 12: SQLite ...>**
+12. To exit the SQLite ..>, type:
+    ```sh
+    ;
+    ```
+
+### **Step 13: .shell cls**
+13. To clear screen, type:
+    ```sh
+    .shell cls
+    ```
+
 ---
 
 With these steps, you'll have SQLite set up and ready to use in your project. Let me know if you’d like me to add anything or refine the notes further! 🚀
