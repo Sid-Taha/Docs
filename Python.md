@@ -1623,7 +1623,7 @@ greet(**data)  # Output: Hello, my name is Alice and I am 25 years old.
 
 ---
 
-## 18. Conditional Statements (if-else)
+# 18. Conditional Statements (if-else)
 
 ### 18.1 Introduction to Conditional Statements
 
@@ -1706,7 +1706,7 @@ if num > 10:
 
 ---
 
-## 19. `sys.intern` in Python
+# 19. `sys.intern` in Python
 
 ### 19.1 Introduction to `sys.intern`
 
