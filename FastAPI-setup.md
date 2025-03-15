@@ -63,7 +63,7 @@ The following code adds a `POST` endpoint that accepts JSON data and returns a r
 
 ```python
 from fastapi import FastAPI
-from pydantic import BaseModel
+from pydantic import BaseModel # request validation ke liye
 
 app = FastAPI()
 
