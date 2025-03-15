@@ -54,6 +54,9 @@ app = FastAPI()
 # Yeh ek GET request ka endpoint define kar raha hai jo root ("/") pe chalega
 @app.get("/")
 def get_function():  # Ek function define kiya jo execute hoga jab yeh endpoint hit hoga
+  # logic
+  # logic
+  # logic 
 return {"name": "Taha"}  # Yeh function ek JSON response return karega
 ```
 
