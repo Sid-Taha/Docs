@@ -1503,7 +1503,7 @@ This guide provides a solid foundation for beginners, while the advanced topics 
 
 ---
 
-## 16. Async/Await (Asynchronous Programming)
+# 16. Async/Await (Asynchronous Programming)
 
 ### 16.1 Introduction to Async/Await
 
@@ -1565,5 +1565,203 @@ Task One Completed
 - **Avoid:** CPU-intensive operations (use multiprocessing instead).
 
 ---
+
+# 17. Unpacking in Python
+
+### 17.1 Introduction to Unpacking
+
+- **Definition:** Unpacking allows extracting values from lists, tuples, or dictionaries into variables.
+- **Why Use It?** It simplifies variable assignment and improves readability.
+
+### 17.2 Unpacking Lists & Tuples
+
+#### Example: Basic Unpacking
+
+```python
+values = (1, 2, 3)
+a, b, c = values
+print(a, b, c)  # Output: 1 2 3
+```
+
+#### Example: Using `*` for Multiple Values
+
+```python
+numbers = [1, 2, 3, 4, 5]
+first, *middle, last = numbers
+print(first)   # Output: 1
+print(middle)  # Output: [2, 3, 4]
+print(last)    # Output: 5
+```
+
+### 17.3 Unpacking Dictionaries
+
+#### Example: Unpacking Keys and Values
+
+```python
+person = {"name": "Alice", "age": 25}
+name, age = person.keys()
+print(name, age)  # Output: name age
+
+name_value, age_value = person.values()
+print(name_value, age_value)  # Output: Alice 25
+```
+
+#### Example: Using `**` for Dictionary Unpacking
+
+```python
+def greet(name, age):
+    print(f"Hello, my name is {name} and I am {age} years old.")
+
+data = {"name": "Alice", "age": 25}
+greet(**data)  # Output: Hello, my name is Alice and I am 25 years old.
+```
+
+### 17.4 When to Use Unpacking?
+
+- **Tuple/List Unpacking:** When dealing with multiple return values from functions.
+- **Dictionary Unpacking:** When passing function arguments dynamically.
+
+---
+
+## 18. Conditional Statements (if-else)
+
+### 18.1 Introduction to Conditional Statements
+
+- **Definition:** Conditional statements allow the execution of different code blocks based on conditions.
+- **Why Use It?** It helps in decision-making in programs.
+
+### 18.2 Basic `if` Statement
+
+```python
+age = 18
+if age >= 18:
+    print("You are eligible to vote.")
+```
+
+### 18.3 `if-else` Statement
+
+```python
+age = 16
+if age >= 18:
+    print("You are eligible to vote.")
+else:
+    print("You are not eligible to vote.")
+```
+
+### 18.4 `if-elif-else` Statement
+
+```python
+score = 85
+if score >= 90:
+    print("Grade: A")
+elif score >= 80:
+    print("Grade: B")
+elif score >= 70:
+    print("Grade: C")
+else:
+    print("Grade: F")
+```
+
+### 18.5 Using `if` in One Line (Ternary Operator)
+
+```python
+age = 20
+status = "Adult" if age >= 18 else "Minor"
+print(status)  # Output: Adult
+```
+
+### 18.6 Logical Operators in `if` Statements
+
+```python
+x = 10
+y = 5
+
+if x > 5 and y < 10:
+    print("Both conditions are True")
+
+if x == 10 or y == 10:
+    print("At least one condition is True")
+
+if not (x < 5):
+    print("x is not less than 5")
+```
+
+### 18.7 Nested `if` Statements
+
+```python
+num = 15
+if num > 10:
+    print("Number is greater than 10")
+    if num % 2 == 0:
+        print("It is an even number")
+    else:
+        print("It is an odd number")
+```
+
+### 18.8 When to Use Conditional Statements?
+
+- **Decision-making** in programs.
+- **Filtering data** based on conditions.
+- **User input validation** in applications.
+
+---
+
+## 19. `sys.intern` in Python
+
+### 19.1 Introduction to `sys.intern`
+
+- **Definition:** `sys.intern()` is used to store and reuse **immutable** string objects efficiently by keeping only one copy of each distinct string in memory.
+- **Why Use It?** Helps in optimizing memory usage and improves string comparison performance.
+
+### 19.2 How `sys.intern()` Works
+
+Python normally creates multiple copies of strings, but `sys.intern()` ensures that identical strings reference the same memory location.
+
+#### Example: Without Interning
+
+```python
+s1 = "hello world"
+s2 = "hello world"
+print(s1 is s2)  # Output: False (Different memory locations)
+```
+
+#### Example: With `sys.intern()`
+
+```python
+import sys
+
+s1 = sys.intern("hello world")
+s2 = sys.intern("hello world")
+print(s1 is s2)  # Output: True (Same memory location)
+```
+
+### 19.3 When to Use `sys.intern()`?
+
+- When working with a **large number of repeated strings**.
+- When comparing **string keys** in dictionaries for performance optimization.
+- In scenarios where **string deduplication** reduces memory overhead.
+
+### 19.4 Performance Optimization Example
+
+```python
+import sys
+import time
+
+words = ["optimization" for _ in range(1000000)]
+start_time = time.time()
+filtered = {word for word in words}
+print("Without interning:", time.time() - start_time)
+
+words = [sys.intern("optimization") for _ in range(1000000)]
+start_time = time.time()
+filtered = {word for word in words}
+print("With interning:", time.time() - start_time)
+```
+
+🔹 **Key Takeaway:** `sys.intern()` is useful when dealing with a **large number of duplicate strings**, making operations like dictionary lookups and set membership checks faster.
+
+---
+
+
 
 Happy coding!
