@@ -1503,4 +1503,67 @@ This guide provides a solid foundation for beginners, while the advanced topics 
 
 ---
 
+## 16. Async/Await (Asynchronous Programming)
+
+### 16.1 Introduction to Async/Await
+
+- **Definition:** Asynchronous programming in Python allows execution of tasks concurrently without blocking the main thread.
+- **Why Use It?** Useful for tasks like network requests, I/O operations, and database queries.
+
+### 16.2 Using `async` and `await`
+
+- `async` defines an **asynchronous function**, allowing the use of `await` inside it.
+- `await` pauses execution until the awaited task completes.
+
+#### Example: Basic Async Function
+
+```python
+import asyncio
+
+async def say_hello():
+    await asyncio.sleep(2)  # Simulating an async task (e.g., API request)
+    print("Hello, Async World!")
+
+asyncio.run(say_hello())
+```
+
+#### 16.3 Running Multiple Tasks Concurrently
+
+- Use `asyncio.gather()` to run multiple tasks at the same time.
+
+```python
+import asyncio
+
+async def task_one():
+    await asyncio.sleep(2)
+    print("Task One Completed")
+
+async def task_two():
+    await asyncio.sleep(1)
+    print("Task Two Completed")
+
+async def main():
+    await asyncio.gather(task_one(), task_two())
+
+asyncio.run(main())
+```
+
+**Output:**
+
+```
+Task Two Completed
+Task One Completed
+```
+
+🔹 **Why is ********************************************`task_two`******************************************** faster?** Since `task_two` only sleeps for **1 second**, it completes before `task_one` (which sleeps for 2 seconds). Both tasks run concurrently.
+
+
+
+#### 16.4 When to Use Async Programming?
+
+- **Good Use Cases:** Network requests, reading/writing large files, interacting with databases, web scraping.
+- **Avoid:** CPU-intensive operations (use multiprocessing instead).
+
+---
+
 Happy coding!
