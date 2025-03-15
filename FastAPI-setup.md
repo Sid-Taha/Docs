@@ -1,4 +1,4 @@
-<h1 style="color:green;">FastAPI Setup Using <code>uv</code></h1>
+# FastAPI Setup Using `uv`
 
 ## Step 1: Initialize `uv`
 
