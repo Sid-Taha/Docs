@@ -1595,10 +1595,40 @@ print(last)    # Output: 5
 
 ### 17.3 Unpacking Dictionaries
 
-#### Example: Unpacking Keys and Values
+#### Example: Unpacking a List
 
 ```python
-# Define a dictionary
+  # Define a list
+  fruits = ["apple", "banana", "cherry"]
+  
+  # Unpacking the list into variables
+  first, second, third = fruits
+  
+  # Print the unpacked values
+  print(first)   # apple
+  print(second)  # banana
+  print(third)   # cherry
+```
+
+#### Example: Unpacking a Unpacking a Tuple
+
+```python
+    # Define a tuple
+  coordinates = (10, 20, 30)
+  
+  # Unpacking the tuple into variables
+  x, y, z = coordinates
+  
+  # Print the unpacked values
+  print(x)  # 10
+  print(y)  # 20
+  print(z)  # 30
+```
+
+#### Example: Unpacking a Unpacking a Dictionary 
+
+```python
+  # Define a dictionary
 person = {"name": "Alice", "age": 25, "city": "New York"}
 
 # Unpacking the dictionary into variables
@@ -1608,16 +1638,7 @@ name, age, city = person.values()
 print(name)  # Alice
 print(age)   # 25
 print(city)  # New York
-```
 
-#### Example: Using `**` for Dictionary Unpacking
-
-```python
-def greet(name, age):
-    print(f"Hello, my name is {name} and I am {age} years old.")
-
-data = {"name": "Alice", "age": 25}
-greet(**data)  # Output: Hello, my name is Alice and I am 25 years old.
 ```
 
 ### 17.4 When to Use Unpacking?
