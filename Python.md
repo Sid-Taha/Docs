@@ -1573,27 +1573,7 @@ Task One Completed
 - **Definition:** Unpacking allows extracting values from lists, tuples, or dictionaries into variables.
 - **Why Use It?** It simplifies variable assignment and improves readability.
 
-### 17.2 Unpacking Lists & Tuples
-
-#### Example: Basic Unpacking
-
-```python
-values = (1, 2, 3)
-a, b, c = values
-print(a, b, c)  # Output: 1 2 3
-```
-
-#### Example: Using `*` for Multiple Values
-
-```python
-numbers = [1, 2, 3, 4, 5]
-first, *middle, last = numbers
-print(first)   # Output: 1
-print(middle)  # Output: [2, 3, 4]
-print(last)    # Output: 5
-```
-
-### 17.3 Unpacking Dictionaries
+### 17.2 Unpacking Examples
 
 #### Example: Unpacking a List
 
@@ -1640,12 +1620,6 @@ print(age)   # 25
 print(city)  # New York
 
 ```
-
-### 17.4 When to Use Unpacking?
-
-- **Tuple/List Unpacking:** When dealing with multiple return values from functions.
-- **Dictionary Unpacking:** When passing function arguments dynamically.
-
 ---
 
 # 18. Conditional Statements (if-else)
