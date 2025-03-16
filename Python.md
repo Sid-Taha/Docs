@@ -1598,12 +1598,16 @@ print(last)    # Output: 5
 #### Example: Unpacking Keys and Values
 
 ```python
-person = {"name": "Alice", "age": 25}
-name, age = person.keys()
-print(name, age)  # Output: name age
+# Define a dictionary
+person = {"name": "Alice", "age": 25, "city": "New York"}
 
-name_value, age_value = person.values()
-print(name_value, age_value)  # Output: Alice 25
+# Unpacking the dictionary into variables
+name, age, city = person.values()
+
+# Print the unpacked values
+print(name)  # Alice
+print(age)   # 25
+print(city)  # New York
 ```
 
 #### Example: Using `**` for Dictionary Unpacking
