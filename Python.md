@@ -1622,86 +1622,13 @@ print(city)  # New York
 ```
 ---
 
-# 18. Conditional Statements (if-else)
-
-### 18.1 Introduction to Conditional Statements
-
-- **Definition:** Conditional statements allow the execution of different code blocks based on conditions.
-- **Why Use It?** It helps in decision-making in programs.
-
-### 18.2 Basic `if` Statement
+# 18 Using `if` in One Line (Ternary Operator)
 
 ```python
-age = 18
-if age >= 18:
-    print("You are eligible to vote.")
+  age = 20
+  status = "Adult" if age >= 18 else "Minor"
+  print(status)  # Output: Adult
 ```
-
-### 18.3 `if-else` Statement
-
-```python
-age = 16
-if age >= 18:
-    print("You are eligible to vote.")
-else:
-    print("You are not eligible to vote.")
-```
-
-### 18.4 `if-elif-else` Statement
-
-```python
-score = 85
-if score >= 90:
-    print("Grade: A")
-elif score >= 80:
-    print("Grade: B")
-elif score >= 70:
-    print("Grade: C")
-else:
-    print("Grade: F")
-```
-
-### 18.5 Using `if` in One Line (Ternary Operator)
-
-```python
-age = 20
-status = "Adult" if age >= 18 else "Minor"
-print(status)  # Output: Adult
-```
-
-### 18.6 Logical Operators in `if` Statements
-
-```python
-x = 10
-y = 5
-
-if x > 5 and y < 10:
-    print("Both conditions are True")
-
-if x == 10 or y == 10:
-    print("At least one condition is True")
-
-if not (x < 5):
-    print("x is not less than 5")
-```
-
-### 18.7 Nested `if` Statements
-
-```python
-num = 15
-if num > 10:
-    print("Number is greater than 10")
-    if num % 2 == 0:
-        print("It is an even number")
-    else:
-        print("It is an odd number")
-```
-
-### 18.8 When to Use Conditional Statements?
-
-- **Decision-making** in programs.
-- **Filtering data** based on conditions.
-- **User input validation** in applications.
 
 ---
 
