@@ -138,3 +138,47 @@ Besides Swagger UI, you can also test your API using **Thunder Client** (VS Code
 - The `DELETE` endpoint removes an item using an `ID`, while the `PUT` endpoint updates an existing record.
 - Use **Swagger UI, Thunder Client, or Postman** to test API requests effectively.
 
+---
+
+
+# FastAPI Deploy Setup on `Vercel`
+
+## Step 1: Create `requirements.txt`
+
+Make a `requirements.txt` file in your project.
+
+## Step 2: Write `requirements.txt`
+
+Write/Mention all of your library names in your `requirements.txt` file.
+
+## Step 3: Create a `vercel.json`
+
+Make a `vercel.json` file in your project. Use the code below and modify according to your needs.
+
+```json
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "your_file_name.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/your_file_name.py"
+    }
+  ]
+}
+```
+
+## Step 4: Push on GitHub
+
+Push your project to GitHub.
+
+## Step 5: Deploy on Vercel
+
+Deploy your project on Vercel.
+
+---
