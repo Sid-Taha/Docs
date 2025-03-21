@@ -74,20 +74,33 @@ OPENAI_API_KEY=your-api-key-here
 Here’s the starting code to load the environment variables and verify that the API key is correctly set.
 
 ```python
-import os
-from dotenv import load_dotenv
-
-# Load environment variables from .env file
-load_dotenv()
-
-from agents import Agent, Runner
-
-# Retrieve the OpenAI API key from environment variables
-API_KEY = os.getenv("OPENAI_API_KEY")
-
-# Check if the API key exists
-if not API_KEY:
-    raise ValueError("API key is not working")
+    import os
+    from dotenv import load_dotenv
+    
+    # Load environment variables
+    load_dotenv()
+    
+    from agents import Agent, Runner
+    
+    API_KEY = os.getenv("OPENAI_API_KEY")
+    
+    if not API_KEY:
+        raise ValueError("API key is not working")
+    
+    
+    
+    agent = Agent(
+        name="Assistant", 
+        instructions="You are a helpful assistant",
+        model="gpt-4o-mini"
+    )
+    
+    def main():
+        result = Runner.run_sync(agent, "Write a haiku about recursion in programming.")
+        print(result.final_output)
+    
+    if __name__ == "__main__":
+        main()
 ```
 
 - **Purpose**: Initializes environment variables and checks the API key.
