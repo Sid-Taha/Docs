@@ -1,4 +1,4 @@
-# OpenAI SDK Setup Using `uv` and Environment Configuration
+# OpenAI SDK Setup Using `uv`
 
 ## Step 1: Initialize Project with `uv`
 
@@ -97,22 +97,3 @@ if not API_KEY:
   - If the API key is missing, a `ValueError` is raised to alert you of the issue.
 
 ---
-
-### Summary
-
-- **Tools Used**:
-  - `uv`: A package manager to manage project dependencies.
-  - `ruff`: A linter to ensure code quality.
-  - `python-dotenv`: Manages environment variables securely.
-  - `openai-agents`: Provides tools for integrating with OpenAI APIs.
-  
-- **Steps**:
-  - Initialize the project with `uv`.
-  - Integrate `ruff` for linting.
-  - Activate the virtual environment.
-  - Install `python-dotenv` for managing environment variables.
-  - Add `openai-agents` for interacting with OpenAI APIs.
-  - Create a `.env` file to securely store your OpenAI API key.
-  - Load the environment variables and validate the API key in your code.
-
-By following these steps, you set up a well-organized development environment for building applications that interact with OpenAI’s API.
