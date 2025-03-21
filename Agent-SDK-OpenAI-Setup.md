@@ -1,4 +1,4 @@
-# OpenAI SDK Setup Using `uv`
+# Agent SDK OpenAI Setup Using `uv`
 
 ## Step 1: Initialize Project with `uv`
 
