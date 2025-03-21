@@ -1,4 +1,4 @@
-# Agent SDK Gemeni Setup Using `uv`
+# Agent SDK Gemini Setup Using `uv`
 
 ## Step 1: Initialize Project with `uv`
 
@@ -57,16 +57,16 @@ uv add openai-agents
 
 ## Step 6: Create the `.env` File for Environment Variables
 
-Create a `.env` file to store your environment variables securely, such as your OpenAI API key.
+Create a `.env` file to store your environment variables securely, such as your Gemini API key.
 
 1. Create a file named `.env` in the root directory of your project.
 2. Add the following line to store your API key:
 
 ```
-OPENAI_API_KEY=your-api-key-here
+gemini_api_key=your-api-key-here
 ```
 
-- **Purpose**: Stores the OpenAI API key securely in the `.env` file.
+- **Purpose**: Stores the Gemini API key securely in the `.env` file.
 - **Explanation**: The `.env` file helps separate configuration from code and prevents sensitive data from being exposed in version control systems.
 
 ## Step 7: Initialize the Python Code
@@ -74,26 +74,50 @@ OPENAI_API_KEY=your-api-key-here
 Here’s the starting code to load the environment variables and verify that the API key is correctly set.
 
 ```python
-import os
-from dotenv import load_dotenv
+    import os
+    from dotenv import load_dotenv
+    from agents import Agent, Runner, AsyncOpenAI, OpenAIChatCompletionsModel
+    from agents import set_default_openai_client
+    
+    load_dotenv()
+    
+    gemini_api_key = os.getenv("gemini_api_key")
+    
+    if not gemini_api_key:
+        raise ValueError("API key is not working")
+      
+    
+    
+    external_client = AsyncOpenAI(
+        api_key=gemini_api_key,
+        base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
+    )
+    
+    set_default_openai_client(external_client)
+    
+    
+    model = OpenAIChatCompletionsModel(
+        model="gemini-2.0-flash",
+        openai_client=external_client
+    )
+    
+    agent: Agent = Agent(
+        name="Assistant", 
+        instructions="You are a helpful assistant", 
+        model=model
+      )
+    
+    
+    result = Runner.run_sync(agent, "are you a openai agent or a google agent?")
+    
+    print(result.final_output)
 
-# Load environment variables from .env file
-load_dotenv()
-
-from agents import Agent, Runner
-
-# Retrieve the OpenAI API key from environment variables
-API_KEY = os.getenv("OPENAI_API_KEY")
-
-# Check if the API key exists
-if not API_KEY:
-    raise ValueError("API key is not working")
 ```
 
 - **Purpose**: Initializes environment variables and checks the API key.
 - **Explanation**:
   - `load_dotenv()` loads the environment variables from the `.env` file.
-  - `os.getenv("OPENAI_API_KEY")` retrieves the OpenAI API key stored in the environment.
+  - `os.getenv("gemini_api_key")` retrieves the OpenAI API key stored in the environment.
   - If the API key is missing, a `ValueError` is raised to alert you of the issue.
 
 ---
