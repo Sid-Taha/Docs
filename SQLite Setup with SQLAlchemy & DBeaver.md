@@ -128,6 +128,8 @@ with engine.connect() as connection:
 ### Explanation:
 - This query updates the `name` of the student with `id = 3` to `'Alex'`.
 
+---
+
 ## Step 11: Install DBeaver
 
 DBeaver is a powerful tool for managing databases with a user-friendly interface. To install DBeaver:
