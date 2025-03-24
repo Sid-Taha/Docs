@@ -26,7 +26,7 @@ Login to your [Vercel](https://vercel.com) account to access its services.
 
 ### Step 2: Open the Storage Tab
 
-Navigate to the **Storage** section in the left sidebar.
+Navigate to the **Storage** section on the top options.
 
 > **Purpose:** Neon databases are created and managed under this tab.
 
@@ -113,10 +113,6 @@ uv init
 ### Step 13: Create `.env` File
 
 Manually create a `.env` file in your project root:
-
-```sh
-touch .env
-```
 
 > **Purpose:** To securely store sensitive environment variables.
 
@@ -215,18 +211,4 @@ From the Vercel Storage page, click **Open in Neon**.
 - Navigate to the **Tables** tab at the bottom left.
 - View your schema and data entries directly in the UI.
 
----
 
-## Summary
-
-| **Aspect**           | **Details**                                       |
-|----------------------|---------------------------------------------------|
-| **Tooling**          | `uv`, `SQLAlchemy`, `python-dotenv`, `psycopg2`   |
-| **UI**               | Managed via **Neon (in Vercel)**                 |
-| **Environment Setup**| Initialized with `uv`, using `.env` for secrets   |
-| **Best Practices**   | Linting with `ruff` _(add separately)_, comments in code |
-| **UI Framework**     | Use **Streamlit** for building interactive UIs (not covered here) |
-
----
-
-> 📌 _Refer to the Technical Notes Guidelines for consistent formatting, structure, and best practices across all future notes._
