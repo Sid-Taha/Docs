@@ -2,8 +2,6 @@
 
 This guide explains how to set up and interact with a **PostgreSQL database** using **Neon**, manage your Python environment with `uv`, and connect via `SQLAlchemy`. We also use `python-dotenv` to manage environment variables securely.
 
-> ✅ _Refer to the [Refined Technical Notes Guidelines](#) for formatting and setup best practices._
-
 ---
 
 ## Prerequisites
