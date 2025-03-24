@@ -3,8 +3,6 @@
 
 This guide provides a comprehensive step-by-step walkthrough for setting up **MySQL** on Windows, connecting it with **SQLAlchemy** in Python, and managing databases visually using **DBeaver**.
 
-> **Refer to the Technical Notes Guidelines** for formatting and setup standards.
-
 ---
 
 ## 🛠️ Project Initialization & Tooling
