@@ -1,5 +1,5 @@
 
-# MySQL Setup with SQLAlchemy & DBeaver
+# MySQL Setup with SQLAlchemy & DBeaver (Local)
 
 This guide provides a comprehensive step-by-step walkthrough for setting up **MySQL** on Windows, connecting it with **SQLAlchemy** in Python, and managing databases visually using **DBeaver**.
 
