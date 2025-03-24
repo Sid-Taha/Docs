@@ -152,11 +152,6 @@ with engine.connect() as connection:
     """))
     connection.commit()  # 🧠 Don't forget to commit the transaction
 ```
-
-> 💡 *Inline Comments:*
-> - `# English`: Clarifies function
-> - `# Hinglish`: Aids bilingual understanding
-
 ---
 
 ## 📊 Optional: Query the Table in Python
