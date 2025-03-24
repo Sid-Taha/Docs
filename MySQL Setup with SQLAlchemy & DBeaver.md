@@ -202,20 +202,3 @@ SELECT * FROM students;
 
 ---
 
-## ✅ Summary
-
-- ✅ **Tools Used**: `uv`, `ruff`, `sqlalchemy`, `pymysql`, `DBeaver`
-- ✅ **Steps Followed**:
-  - Installed MySQL and configured environment
-  - Created and connected to a MySQL database
-  - Used SQLAlchemy to create tables and insert data
-  - Visualized data in both CLI and GUI (DBeaver)
-- ✅ **Next Steps**: 
-  - Continue building ORM models in SQLAlchemy
-  - Expand database schema
-  - Use Streamlit for UI (Refer to UI Development Guidelines)
-
----
-
-📎 *Reference*: Follow the [Technical Notes Guidelines] for consistent formatting, project tooling, and best practices.
-```
