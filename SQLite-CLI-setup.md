@@ -25,7 +25,7 @@
 ### **Step 7: Start SQLite Shell**
 7. Run the following command to start the SQLite shell with your database:
    ```sh
-   .\sqlite3.exe library.db
+   .\sqlite3.exe your_database_name.db
    ```
 
 ### **Step 8: Configure the Output Format**
