@@ -45,9 +45,9 @@
    ```
 
 ### **Step 10: Query Data**
-10. To retrieve all data from the **your_table** table, run the SQL query:
+10. To retrieve all data from  **your_table** table, run the SQL query:
     ```sql
-    SELECT * FROM books;
+    SELECT * FROM your_table_name;
     ```
 
 ### **Step 11: Exit SQLite**
