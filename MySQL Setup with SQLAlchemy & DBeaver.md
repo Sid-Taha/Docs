@@ -91,6 +91,9 @@ Enter your root password when prompted.
 
 ```sql
 CREATE DATABASE school;
+```
+
+```sql
 USE school;
 ```
 
