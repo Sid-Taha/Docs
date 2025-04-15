@@ -139,6 +139,32 @@ git stash temporarily shelves (or "stashes") changes in your working directory a
   git stash pop
   ```
 
+### 3.1.2 Drop the stash manually:
+
+- **`git stash drop`**
+  - If you used apply, drop the stash manually:
+
+  ```sh
+  git stash drop
+  ```
+
+### 3.1.3 drop a specific stash::
+
+- **`git stash drop stash@{0}`**
+  - Or view the list and drop a specific stash:
+
+  ```sh
+  git stash drop stash@{0}
+  ```
+
+  ### 🔥 Pro Tip
+  If you have multiple stashes, use:
+  ```bash
+  git stash list
+  git stash apply stash@{1}  # apply a specific one
+  ```
+  
+
 - **`git stash list`**  
   Displays a list of all stashed changes.
 
