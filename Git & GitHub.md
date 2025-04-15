@@ -118,6 +118,13 @@ Git is a distributed version control system that helps developers manage their c
 ### 🔄 What git stash Does
 git stash temporarily shelves (or "stashes") changes in your working directory and index (staged changes), so you can work on something else and come back to them later.
 
+### 🚨 First, Important Note:
+> **Stashes are not pushed to GitHub.**
+
+`git stash` is **local only**—it doesn’t create commits that GitHub can see. It just saves a snapshot on your local machine. Until you **apply the stash, add, commit, and push** the changes, nothing related to the stash appears on GitHub.
+
+
+
 ### 3.1 Stashing Changes
 
 - **`git stash`**
