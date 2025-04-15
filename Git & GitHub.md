@@ -115,20 +115,28 @@ Git is a distributed version control system that helps developers manage their c
 
 ## 3. Advanced Git Operations
 
+### 🔄 What git stash Does
+git stash temporarily shelves (or "stashes") changes in your working directory and index (staged changes), so you can work on something else and come back to them later.
+
 ### 3.1 Stashing Changes
 
-- **`git stash`**  
+- **`git stash`**
+- Only tracked but unstaged changes get stashed.
+- New untracked files (e.g., newly created files not added with git add) will NOT be stashed.
+
   Temporarily saves your uncommitted changes so you can switch contexts or branches without losing your progress.
 
   ```sh
   git stash
   ```
 
-- **`git stash save "<message>"`**  
-  Saves your uncommitted changes with a descriptive message.
+### 3.1.1 Delete Stash
+
+- **`stash pop`**
+  - When you run git stash pop, those changes will come back.
 
   ```sh
-  git stash save "work in progress on X feature"
+  git stash pop
   ```
 
 - **`git stash list`**  
