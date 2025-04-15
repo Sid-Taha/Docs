@@ -179,6 +179,21 @@ git stash temporarily shelves (or "stashes") changes in your working directory a
   git stash apply
   ```
 
+  ### 🔁 Summary
+  
+  | Action | What It Does |
+  |--------|--------------|
+  | `git stash` | Saves changes locally (not on GitHub) |
+  | `git stash apply` | Brings changes back to your working directory |
+  | `git add .` | Stages those changes |
+  | `git commit -m "message"` | Creates a commit GitHub will recognize |
+  | `git push` | Uploads that commit to GitHub |
+  
+  ---
+
+
+  
+
 ### 3.2 Working with GitHub Repositories
 
 #### 3.2.1 Forking a Repository
