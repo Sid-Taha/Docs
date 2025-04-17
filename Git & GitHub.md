@@ -137,6 +137,7 @@ git stash temporarily shelves (or "stashes") changes in your working directory a
   git stash
   ```
 
+
   - **`git stash apply`**  
   Applies the most recent stash to your working directory.
 
