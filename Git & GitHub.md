@@ -137,6 +137,13 @@ git stash temporarily shelves (or "stashes") changes in your working directory a
   git stash
   ```
 
+  - **`git stash apply`**  
+  Applies the most recent stash to your working directory.
+
+  ```sh
+  git stash apply
+  ```
+
 ### 3.1.1 Delete Stash
 
 - **`stash pop`**
@@ -179,12 +186,6 @@ git stash temporarily shelves (or "stashes") changes in your working directory a
   git stash list
   ```
 
-- **`git stash apply`**  
-  Applies the most recent stash to your working directory.
-
-  ```sh
-  git stash apply
-  ```
 
   ### 🔁 Summary
   
