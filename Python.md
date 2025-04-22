@@ -48,9 +48,39 @@ This document covers Python from the basics to advanced topics, complete with on
 - **Example:**
   ```python
   a, b = 5, 10
-  print(a ** 2)        # Output: 25 (Exponentiation)
-  print(b // a)        # Output: 2  (Floor division)
-  print(a < b and a != b)  # Output: True
+  
+  # Arithmetic Operators
+  print(a ** 2)          # Output: 25 (Exponentiation)
+  print(b // a)          # Output: 2 (Floor division)
+  print(a % b)           # Output: 5 (Modulus)
+  
+  # Comparison Operators
+  print(a == b)          # Output: False (Equal)
+  print(a != b)          # Output: True  (Not equal)
+  print(a > b)           # Output: False (Greater than)
+  print(a < b)           # Output: True  (Less than)
+  print(a >= b)          # Output: False (Greater than or equal to)
+  print(a <= b)          # Output: True  (Less than or equal to)
+  
+  # Logical Operators
+  print(a < b and a != b)    # Output: True (Both conditions are true)
+  print(a > b or a != b)     # Output: True (One condition is true)
+  print(not (a == b))        # Output: True (Negates the equality check)
+  
+  # Membership Operators
+  my_list = [1, 2, 3, 4, 5]
+  print(a in my_list)        # Output: False (5 is not in the list)
+  print(b not in my_list)    # Output: True (10 is not in the list)
+  
+  # Identity Operators
+  x = [1, 2, 3]
+  y = [1, 2, 3]
+  z = x
+  
+  print(x is y)        # Output: False (Different objects in memory, even if they have the same content)
+  print(x is z)        # Output: True  (Same object in memory)
+  print(x is not y)    # Output: True  (x and y are different objects)
+
   ```
 
 ### 1.5 Input from User
