@@ -99,18 +99,42 @@ This document covers Python from the basics to advanced topics, complete with on
   `.lower()`, `.upper()`, `.capitalize()`, `.title()`, `.strip()`, `.index()`, `.count()`, `.replace()`, `.split()`, `.join()`, `.isalnum()`
 - **Examples:**
   ```python
-  text = "Hello World"
-  print(text.upper())                    # Output: HELLO WORLD
-  print(text.replace("World", "Python")) # Output: Hello Python
+  text = " Hello World "
   
-  # Using f-strings and checking length
-  name = "taha"
-  print(f"Hello, {name}")  # Output: Hello, taha
-  print(len(name))         # Output: 4
+  # .lower(): Converts all characters to lowercase
+  print(text.lower())  # Output: " hello world "
   
-  # Rounding a float
-  value = 10.5678
-  print(round(value, 2))   # Output: 10.57
+  # .upper(): Converts all characters to uppercase
+  print(text.upper())  # Output: " HELLO WORLD "
+  
+  # .capitalize(): Capitalizes the first character of the string
+  print(text.capitalize())  # Output: " hello world "
+  
+  # .title(): Capitalizes the first letter of each word
+  print(text.title())  # Output: " Hello World "
+  
+  # .strip(): Removes any leading and trailing spaces
+  print(text.strip())  # Output: "Hello World"
+  
+  # .index(): Finds the first occurrence of a substring and returns its index
+  print(text.index("World"))  # Output: 6
+  
+  # .count(): Returns the number of occurrences of a substring
+  print(text.count("o"))  # Output: 2
+  
+  # .replace(): Replaces a substring with another substring
+  print(text.replace("World", "Python"))  # Output: " Hello Python "
+  
+  # .split(): Splits the string into a list of substrings based on a separator
+  print(text.split())  # Output: ['Hello', 'World']
+  
+  # .join(): Joins a list of strings into a single string with a separator
+  words = ["Hello", "Python"]
+  print(" ".join(words))  # Output: "Hello Python"
+  
+  # .isalnum(): Checks if all characters in the string are alphanumeric (letters or numbers)
+  print(text.isalnum())  # Output: False (because of spaces)
+
   ```
 
 ---
