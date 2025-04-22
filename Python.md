@@ -1,6 +1,3 @@
-Below is the combined, well‐formatted markdown file that includes all topics and examples from both files. Feel free to extend or modify any examples as needed!
-
----
 
 # Python Learning Notes (From Basics to Advanced)
 
