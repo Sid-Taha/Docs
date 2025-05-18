@@ -1,5 +1,3 @@
-I'd be happy to teach you about these topics from your GIAIC OOP curriculum. These cover the fundamentals of Object-Oriented Programming in Python. Let's go through each topic systematically so you'll be well-prepared for your viva.
-
 ## Notebook 12
 
 ### 1. Introduction to OOP
@@ -771,5 +769,3 @@ class MyClass:
 
 print(type(MyClass))  # Output: <class 'type'>
 ```
-
-This comprehensive overview covers all the topics from your GIAIC OOP curriculum. Do you want me to go into more detail on any specific topic, or provide more practical examples for your viva preparation?
