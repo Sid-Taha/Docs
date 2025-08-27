@@ -1,6 +1,3 @@
-[![A simple and comprehensive explanation of Hypertext Transfer Protocol ...](https://tse1.mm.bing.net/th/id/OIP.GKn_3VPbscyDJQMgBB6usgHaEK?pid=Api)](https://www.ionos.ca/digitalguide/hosting/technical-matters/what-is-http/)
-
----
 
 ## 🌐 What Is REST?
 
