@@ -19,7 +19,7 @@ Think of a **Buffer** as a container that holds raw data in its most basic form 
 - **Hex**: 2 hex characters = 8 bits = 1 byte 🔢
 - **Unicode**: Every character has a unique number 🆔
 
-### UTF-8 code Table:
+### UTF Table & Convertor:
 1. [UTF-8 Table](https://www.charset.org/utf-8)
 2. [UTF-8 Converter](https://checkserp.com/encode/utf8/)
 3. [UTF-16 Converter](https://onlinetools.com/unicode/convert-unicode-to-utf16)
