@@ -1,4 +1,4 @@
-🌳 My Current Tech Stack Knowledge Tree
+My Current Tech Stack Knowledge Tree
 
 
 ├── Language
@@ -71,3 +71,8 @@
 |       |-- uv init (initialize a uv project)
 |       |-- uv add (add a package)
 |       |-- uv run (run a specific file)
+
+
+
+
+
