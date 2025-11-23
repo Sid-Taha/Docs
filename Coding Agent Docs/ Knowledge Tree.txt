@@ -12,7 +12,33 @@ My current knowladge tree of tech stacks
 |-- Backend
 |   |-- Node.js
 |       |-- Express.js
+|           |-- commonjs module (require)
 |           |-- MVC architecture (separation of concerns)
+|           |   ├── .env
+|           |   ├── .gitignore
+|           |   ├── docker-compose.yaml
+|           |   ├── drizzle.config.js
+|           |   ├── index.js
+|           |   ├── package-lock.json
+|           |   ├── package.json
+|           |   ├── controllers/
+|           |   │   └── user.controller.js
+|           |   ├── db/
+|           |   │   └── connection.js
+|           |   ├── drizzle/
+|           |   ├── middlewares/
+|           |   │   ├── rateLimit.middleware.js
+|           |   │   ├── sessionCheck.middleware.js
+|           |   │   └── user.validation.middleware.js
+|           |   ├── model/
+|           |   │   └── user.model.js
+|           |   ├── routes/
+|           |   │   └── user.routes.js
+|           |   ├── validators/
+|           |   │   └── user.validationSchema.js
+|           |   └── view/
+|           |   └── index.html
+|           |   
 |           |-- Caching (node-cache)
 |           |-- API Pagination
 |           |-- API Versioning
