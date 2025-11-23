@@ -66,5 +66,8 @@
 │   └── OpenAI Agent SDK (Python)
 │       └── Based on March 2025 documentation
 │
-└── Python Package Manager
-    └── uv  (https://github.com/astral-sh/uv)
+|-- Python Package Manager
+|   |-- uv (https://github.com/astral-sh/uv)
+|       |-- uv init (initialize a uv project)
+|       |-- uv add (add a package)
+|       |-- uv run (run a specific file)
