@@ -49,8 +49,12 @@ My Current Tech Stack Knowledge Tree
 │
 ├── Database
 │   └── PostgreSQL
-│       ├── Drizzle ORM
-│       └── Dockerized setup
+│   |   ├── Drizzle ORM
+│   |   └── Dockerized setup
+│   |
+│   └── MongoDb
+│       ├── mongoose ORM
+│       └── Atlas
 │
 ├── Validation
 │   └── Zod
