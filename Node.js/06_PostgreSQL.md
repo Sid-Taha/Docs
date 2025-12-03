@@ -222,7 +222,16 @@ It's good practice to organize your files. Create your folders to match this str
 Run this command to install Drizzle ORM, the `pg` driver for PostgreSQL, and `dotenv` to manage our password.
 
 ```bash
-npm i drizzle-orm pg dotenv
+npm install drizzle-orm@latest
+```
+```bash
+npm install -D drizzle-kit@latest
+```
+```bash
+npm install pg
+```
+```bash
+npm install dotenv
 ```
 
 **What we're installing:**
