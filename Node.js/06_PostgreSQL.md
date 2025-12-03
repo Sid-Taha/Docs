@@ -262,25 +262,22 @@ DATABASE_URL="postgres://postgres:admin@localhost:5432/mydb"
 Create `db/index.js`:
 
 ```javascript
-// db/index.js
+// db\connection.js
 
 // .env file ko load karne ke liye
 require('dotenv').config();
 
 const { drizzle } = require("drizzle-orm/node-postgres");
-const { Client } = require('pg'); // 'pg' library se Client import karein
+const { Pool } = require('pg'); // 'pg' library se Pool import karein
 
-// Ek naya client banayein
-const client = new Client({
+// buhut sarre clients ke liye ek naya pool banayein
+const pool = new Pool({
   connectionString: process.env.DATABASE_URL, // .env file se URL read kar rahe hain
 });
 
-// Database se connect karein
-// Note: Production apps mein 'Pool' use karna behtar hai, but yeh simple setup hai
-client.connect(); 
 
-// Drizzle ko 'pg' client ke saath initialize karein
-const db = drizzle(client);
+// Drizzle ko 'pg' Pool ke saath initialize karein
+const db = drizzle(pool);
 
 // 'db' object ko export karein taaki doosri files use kar sakein
 module.exports = db;
