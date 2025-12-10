@@ -61,6 +61,8 @@ My Current Tech Stack Knowledge Tree
 │
 ├── Containerization
 │   └── Docker Desktop
+│   └── Docker HUB
+│   └── Docker Compose
 │
 ├── AI API Integration
 │   ├── OpenAI API (Python)
