@@ -1,7 +1,3 @@
-Here is the complete, step-by-step guide in **Markdown**. You can save this as `AWS-ECS-Guide.md` for future reference.
-
------
-
 # 🚀 Deploying Node.js App to AWS ECS (Fargate) - The Complete Guide
 
 This guide covers everything from creating a Node.js app to deploying it on AWS ECS using Docker. It includes fixes for common mistakes encountered during our sessions.
