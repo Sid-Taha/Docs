@@ -64,6 +64,10 @@ My Current Tech Stack Knowledge Tree
 │   └── Docker HUB
 │   └── Docker Compose
 │
+|-- Deployment
+│   └── AWS ECR
+│   └── AWS ECS
+│
 ├── AI API Integration
 │   ├── OpenAI API (Python)
 │   └── OpenAI API (JavaScript)
