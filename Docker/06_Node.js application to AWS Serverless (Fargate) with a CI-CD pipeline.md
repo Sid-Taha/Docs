@@ -134,7 +134,6 @@ README.md
 ```text
 node_modules
 .env                # Never push .env to GitHub!
-# Dockerfile        <-- Ensure this is NOT commented out or listed here
 ```
 
 -----
