@@ -68,6 +68,9 @@ My Current Tech Stack Knowledge Tree
 │   └── AWS ECR
 │   └── AWS ECS
 │
+|-- CI/CD Pipeline
+│   └── Github Actions
+│
 ├── AI API Integration
 │   ├── OpenAI API (Python)
 │   └── OpenAI API (JavaScript)
