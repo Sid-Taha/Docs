@@ -124,7 +124,6 @@ node_modules
 .dockerignore
 Dockerfile
 .env
-npm-debug.log
 README.md
 ```
 
@@ -135,7 +134,6 @@ README.md
 ```text
 node_modules
 .env                # Never push .env to GitHub!
-npm-debug.log
 # Dockerfile        <-- Ensure this is NOT commented out or listed here
 ```
 
