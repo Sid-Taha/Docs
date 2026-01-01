@@ -1,6 +1,5 @@
 My Current Tech Stack Knowledge Tree
 
-
 ├── Language
 │   ├── JavaScript
 │   ├── TypeScript
@@ -48,28 +47,68 @@ My Current Tech Stack Knowledge Tree
 │   └── FastAPI
 │
 ├── Database
-│   └── PostgreSQL
-│   |   ├── Drizzle ORM
-│   |   └── Dockerized setup
-│   |
-│   └── MongoDb
-│       ├── mongoose ORM
+│   ├── PostgreSQL
+│   │   ├── Drizzle ORM
+│   │   └── Dockerized setup
+│   │
+│   └── MongoDB
+│       ├── Mongoose ORM
 │       └── Atlas
+│       └── MongoDB Aggregation Pipeline
 │
 ├── Validation
 │   └── Zod
 │
 ├── Containerization
-│   └── Docker Desktop
-│   └── Docker HUB
-│   └── Docker Compose
+│   ├── Docker Desktop
+│   ├── Docker Hub
+│   ├── Docker Compose
+│   └── Container Image Optimization
+│       ├── Multi-stage builds
+│       └── .dockerignore
 │
-|-- Deployment
-│   └── AWS ECR
-│   └── AWS ECS
+├── Container Orchestration (NEW)
+│   ├── Kubernetes
+│   │   ├── Core Concepts
+│   │   │   ├── Pods
+│   │   │   ├── Deployments
+│   │   │   ├── Services
+│   │   │   ├── ConfigMaps
+│   │   │   ├── Secrets
+│   │   │   └── Namespaces
+│   │   ├── Workloads
+│   │   │   ├── Rolling Updates
+│   │   │   ├── Auto-scaling (HPA)
+│   │   │   └── Health Checks (Liveness / Readiness)
+│   │   ├── Networking
+│   │   │   ├── ClusterIP / NodePort / LoadBalancer
+│   │   │   └── Ingress
+│   │   └── kubectl CLI
+│   │
+│   ├── Minikube
+│   │   ├── Local Kubernetes cluster
+│   │   ├── Docker driver
+│   │   ├── Addons (Ingress, Dashboard)
+│   │   └── Local testing for Kubernetes deployments
+│   │
+│   └── Helm
+│       ├── Helm Charts
+│       ├── values.yaml configuration
+│       ├── Template rendering
+│       ├── Versioned deployments
+│       └── Rollbacks & upgrades
 │
-|-- CI/CD Pipeline
-│   └── Github Actions
+├── Deployment
+│   ├── AWS ECR (Container Registry)
+│   ├── AWS ECS (Container Service)
+│   └── Kubernetes-based Deployment (Future-ready)
+│       ├── Self-managed / Cloud-managed clusters
+│       └── Blue-Green / Rolling strategies
+│
+├── CI/CD Pipeline
+│   ├── GitHub Actions
+│   ├── Docker Image Build & Push
+│   └── Kubernetes / Helm Deployment Automation
 │
 ├── AI API Integration
 │   ├── OpenAI API (Python)
@@ -79,13 +118,8 @@ My Current Tech Stack Knowledge Tree
 │   └── OpenAI Agent SDK (Python)
 │       └── Based on March 2025 documentation
 │
-|-- Python Package Manager
-|   |-- uv (https://github.com/astral-sh/uv)
-|       |-- uv init (initialize a uv project)
-|       |-- uv add (add a package)
-|       |-- uv run (run a specific file)
-
-
-
-
-
+├── Python Package Manager
+│   └── uv
+│       ├── uv init (initialize a uv project)
+│       ├── uv add (add a package)
+│       └── uv run (run a specific file)
